@@ -2,7 +2,7 @@
 	"name": "Done",
 	"description": "Track your achievements throughout the day.",
 	"version": "0.0.1",
-	"license": "GPLv2",
+	"license": "GPL-3.0-or-later",
 	"bin": {
 		"Done": "index.js",
 		"done": "index.js"
