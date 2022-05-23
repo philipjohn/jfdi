@@ -1,16 +1,26 @@
-const meow = require('meow');
-const meowHelp = require('cli-meow-help');
+import meowHelp from 'cli-meow-help'
+import meow from 'meow'
 
 const flags = {
+	yesterday: {
+		type: 'boolean',
+		default: false,
+		desc: 'Add an item to yesterday'
+	},
+	date: {
+		type: 'string',
+		default: '',
+		desc: 'Specify a particular date to show/add to.'
+	},
 	clear: {
 		type: `boolean`,
-		default: true,
+		default: false,
 		alias: `c`,
 		desc: `Clear the console`
 	},
 	noClear: {
 		type: `boolean`,
-		default: false,
+		default: true,
 		desc: `Don't clear the console`
 	},
 	debug: {
@@ -27,7 +37,8 @@ const flags = {
 };
 
 const commands = {
-	help: { desc: `Print help info` }
+	help: { desc: `Print help info` },
+	add: { desc: `Adds a new achievement` }
 };
 
 const helpText = meowHelp({
@@ -43,4 +54,4 @@ const options = {
 	flags
 };
 
-module.exports = meow(helpText, options);
+export default meow(helpText, options)

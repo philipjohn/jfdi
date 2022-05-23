@@ -1,8 +1,11 @@
-const welcome = require('cli-welcome');
-const pkg = require('./../package.json');
-const unhandled = require('cli-handle-unhandled');
+import welcome from 'cli-welcome'
+import unhandled from 'cli-handle-unhandled'
 
-module.exports = ({ clear = true }) => {
+import { createRequire } from "module"
+const require = createRequire(import.meta.url)
+const pkg = require("../package.json")
+
+export default ({ clear = false }) => {
 	unhandled();
 	welcome({
 		title: `Done`,
