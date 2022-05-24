@@ -1,5 +1,5 @@
 {
-	"name": "done",
+	"name": "jfdi",
 	"description": "Track your achievements throughout the day.",
 	"version": "0.0.2",
 	"license": "GPL-3.0-or-later",
@@ -8,7 +8,7 @@
 		"node": ">=14.16"
 	},
 	"bin": {
-		"done-it": "index.js"
+		"jfdi": "index.js"
 	},
 	"author": {
 		"name": "Philip John",
@@ -17,6 +17,11 @@
 	},
 	"keywords": [
 		"Done",
+		"todo",
+		"to-do",
+		"to do",
+		"to do list",
+		"checklist",
 		"Philip John"
 	],
 	"files": [

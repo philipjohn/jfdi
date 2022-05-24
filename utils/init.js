@@ -8,8 +8,8 @@ const pkg = require("../package.json")
 export default ({ clear = false }) => {
 	unhandled();
 	welcome({
-		title: `Done`,
-		tagLine: `by Philip John`,
+		title: pkg.name.toUpperCase(),
+		tagLine: `by ${pkg.author.name}`,
 		description: pkg.description,
 		version: pkg.version,
 		bgColor: '#36BB09',
